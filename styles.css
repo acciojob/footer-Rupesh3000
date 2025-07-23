@@ -1,1 +1,155 @@
-/* your code here */
+
+      /* Reset and base styles */
+      * {
+         margin: 0;
+         padding: 0;
+         box-sizing: border-box;
+      }
+
+      body {
+         font-family: Arial, sans-serif;
+      }
+
+      footer {
+         background: #222;
+         color: #fff;
+         width: 100%;
+      }
+
+      footer .content {
+         max-width: 1200px;
+         margin: auto;
+         padding: 40px 20px;
+      }
+
+      footer .top {
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         flex-wrap: wrap;
+         border-bottom: 1px solid #444;
+         padding-bottom: 20px;
+      }
+
+      .logo-details .logo_name {
+         font-size: 24px;
+         font-weight: bold;
+         color: #fff;
+      }
+
+      .media-icons {
+         display: flex;
+         gap: 15px;
+      }
+
+      .media-icons a {
+         display: inline-block;
+         width: 40px;
+         height: 40px;
+         background: #444;
+         color: #fff;
+         text-align: center;
+         line-height: 40px;
+         border-radius: 50%;
+         font-size: 18px;
+         transition: 0.3s;
+      }
+
+      .media-icons a:hover {
+         background: #1da1f2;
+      }
+
+      /* Link Boxes Section */
+      .link-boxes {
+         display: flex;
+         justify-content: space-between;
+         flex-wrap: wrap;
+         margin-top: 30px;
+      }
+
+      .link-boxes .box {
+         list-style: none;
+         width: 180px;
+         margin-bottom: 20px;
+      }
+
+      .link-boxes .box .link_name {
+         font-size: 18px;
+         font-weight: bold;
+         margin-bottom: 15px;
+         color: #fff;
+      }
+
+      .link-boxes .box li {
+         margin: 8px 0;
+      }
+
+      .link-boxes .box li a {
+         color: #bbb;
+         text-decoration: none;
+         transition: 0.3s;
+      }
+
+      .link-boxes .box li a:hover {
+         color: #fff;
+      }
+
+      /* Bottom details */
+      .bottom-details {
+         background: #111;
+         padding: 15px 20px;
+      }
+
+      .bottom-details .bottom_text {
+         display: flex;
+         justify-content: space-between;
+         flex-wrap: wrap;
+         font-size: 14px;
+         color: #bbb;
+      }
+
+      .bottom-details .bottom_text a {
+         color: #bbb;
+         margin-left: 10px;
+         text-decoration: none;
+      }
+
+      .bottom-details .bottom_text a:hover {
+         color: #fff;
+      }
+
+      /* Responsive Design */
+      @media (max-width: 900px) {
+         .link-boxes {
+            justify-content: flex-start;
+         }
+      }
+
+      @media (max-width: 768px) {
+         .top {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+         }
+
+         .media-icons {
+            margin-top: 15px;
+         }
+
+         .link-boxes {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+         }
+
+         .link-boxes .box {
+            width: 100%;
+         }
+
+         .bottom-details .bottom_text {
+            flex-direction: column;
+            text-align: center;
+            gap: 10px;
+         }
+      }
+   
